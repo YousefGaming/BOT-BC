@@ -99,7 +99,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By :Cosita' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`$bc | Cosita Network`,"http://twitch.tv/Cosita")
+client.user.setGame(`$obc | Cosita Network`,"http://twitch.tv/Cosita")
 client.user.setStatus("dnd")
 });
 
