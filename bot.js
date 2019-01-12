@@ -7,7 +7,7 @@ var adminprefix = '$'
 //bc
 
 client.on("message", message => {
-    if (message.content.startsWith("$obc")) {
+    if (message.content.startsWith("$bc")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
@@ -122,6 +122,18 @@ if (message.content.startsWith(adminprefix + 'setava')) {
   client.user.setAvatar(argresult);
     message.channel.send(`Changing The Avatar To :**${argresult}** `);
 }
+});
+
+
+client.on('ready', () => {
+   console.log(`----------------`);
+      console.log(`Desert Bot- Script By : Cosita`);
+        console.log(`----------------`);
+      console.log(`ON ${client.guilds.size} Servers '     Script By :Cosita' `);
+    console.log(`----------------`);
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`$bc | Cosita Network`,"http://twitch.tv/Cosita")
+client.user.setStatus("dnd")
 });
 
 
